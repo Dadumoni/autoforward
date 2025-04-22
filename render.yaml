@@ -1,8 +1,7 @@
 services:
   - type: worker
-    name: telegram-auto-forward-bot
+    name: telegram-forward-bot
     env: python
-    plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python auto_forward_bot.py
-    autoDeploy: false
+    startCommand: python bot.py
+    plan: free
